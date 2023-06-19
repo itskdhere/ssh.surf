@@ -1,0 +1,32 @@
+{
+  "name": "ssh.surf",
+  "version": "1.0.0",
+  "description": "API Wrapper For ssh.surf",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": "./src/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itskdhere/ssh.surf.git"
+  },
+  "keywords": [
+    "ssh.surf", "ssh.surf api"
+  ],
+  "author": "KD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itskdhere/ssh.surf/issues"
+  },
+  "homepage": "https://github.com/itskdhere/ssh.surf#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chalk-animation": "^2.0.3",
+    "figlet": "^1.6.0",
+    "gradient-string": "^2.0.2",
+    "nanospinner": "^1.1.0"
+  }
+}

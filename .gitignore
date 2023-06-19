@@ -1,3 +1,7 @@
+# Misc.
+temp/
+tmp/
+
 # Logs
 logs
 *.log
