@@ -35,7 +35,7 @@ npm install ssh.surf
 
 <h2>🧵 Usage</h2>
 
-<details>
+<details open>
 <summary><b>⚙ Initialization:</b></summary>
 
 ```js
@@ -47,7 +47,7 @@ const sshsurf = new SshSurfApi({
 ```
 </details>
 
-<details>
+<details open>
 <summary><b>📡 Methods:</b></summary>
 <br>
 
