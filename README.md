@@ -7,9 +7,9 @@
 <a href="https://github.com/itskdhere/ssh.surf/actions/workflows/ossar.yml" title="OSSAR">
 <img alt="OSSAR" src="https://github.com/itskdhere/ssh.surf/actions/workflows/ossar.yml/badge.svg">
 </a>
-<a href="https://github.com/itskdhere/ssh.surf/actions/workflows/npm-publish.yml" title="Node.js Package">
+<!-- <a href="https://github.com/itskdhere/ssh.surf/actions/workflows/npm-publish.yml" title="Node.js Package">
 <img alt="Node.js Package" src="https://github.com/itskdhere/ssh.surf/actions/workflows/npm-publish.yml/badge.svg">
-</a>
+</a> -->
 </p>
 
 <hr>

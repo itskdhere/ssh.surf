@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Imports
 import figlet from "figlet";
 import gradient from "gradient-string";
