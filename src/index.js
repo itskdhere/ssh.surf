@@ -15,7 +15,7 @@ class SshSurfApi {
     * Required Options:
     * 
     * @param apiKey - Your SSH.SURF API Key
-    * @param figletDecoration - Whether To Show The Figlet Decoration Or Not. Vlaues: `true` or `false`. Default: `true`
+    * @param figletDecoration - Whether To Show The Figlet Decoration Or Not. Vlaues: `true` or `false`. Default Value: `true`
     */
 
     constructor(options) {

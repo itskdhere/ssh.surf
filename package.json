@@ -1,6 +1,6 @@
 {
   "name": "ssh.surf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "SSH.SURF API Wrapper",
   "type": "module",
   "main": "./src/index.js",
@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "echo No Tests Yet...",
-    "start": "node index.js"
+    "start": "node index.js",
+    "cli": "node cli.js"
   },
   "repository": {
     "type": "git",
