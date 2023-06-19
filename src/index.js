@@ -9,23 +9,30 @@ class SshSurfApi {
     #apiKey;
     #baseUrl;
     #headers;
+    #figletDecoration;
 
     /**
     * Required Options:
     * 
     * @param apiKey - Your SSH.SURF API Key
+    * @param figletDecoration - Whether To Show The Figlet Decoration Or Not. Vlaues: `true` or `false`. Default: `true`
     */
 
     constructor(options) {
-        console.log(gradient.pastel.multiline(figlet.textSync('SSH.SURF', {
-            font: 'big',
-            horizontalLayout: 'default',
-            verticalLayout: 'default',
-            width: 69,
-            whitespaceBreak: true
-        })));
+        const { apiKey, figletDecoration } = options;
 
-        const { apiKey } = options;
+        this.#figletDecoration = figletDecoration || true;
+
+        if (this.#figletDecoration == true) {
+            console.log(gradient.pastel.multiline(figlet.textSync('SSH.SURF', {
+                font: 'Big',
+                horizontalLayout: 'default',
+                verticalLayout: 'default',
+                width: 69,
+                whitespaceBreak: true
+            })));
+        }
+
         this.#apiKey = apiKey;
 
         this.#baseUrl = 'https://api.ssh.surf';

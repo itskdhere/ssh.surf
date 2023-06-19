@@ -26,7 +26,7 @@ async function art() {
 
     setTimeout(() => {
         rainbow = chalkAnimation.rainbow(figlet.textSync('SSH.SURF', {
-            font: 'big',
+            font: 'Big',
             horizontalLayout: 'default',
             verticalLayout: 'default',
             width: 69,

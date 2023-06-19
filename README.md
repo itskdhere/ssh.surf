@@ -38,11 +38,18 @@ npm install ssh.surf
 <details open>
 <summary><b>⚙ Initialization:</b></summary>
 
+Import the `SshSurfApi` class from the package. Then create a new instance of the class with the required parameters. Required Parameters:
+- `apiKey` - Your SSH.SURF API Key (Required)
+- `figletDecoration` - Whether To Show The Figlet Decoration Or Not (Optional)
+    - Vlaues: `true` or `false`
+    - Default Value: `true`
+
 ```js
 import SshSurfApi from 'ssh.surf';
 
 const sshsurf = new SshSurfApi({
-    apiKey: 'YOUR_SSH.SURF_API_KEY_HERE'
+    apiKey: 'YOUR_SSH.SURF_API_KEY_HERE',
+    figletDecoration: true 
 });
 ```
 </details>
