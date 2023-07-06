@@ -1,6 +1,6 @@
 {
   "name": "ssh.surf",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "SSH.SURF API Wrapper",
   "type": "module",
   "main": "./src/index.js",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/itskdhere/ssh.surf.git"
   },
-  "author": "KD",
+  "author": "itskdhere",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/itskdhere/ssh.surf/issues"
