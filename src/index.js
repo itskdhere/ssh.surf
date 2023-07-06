@@ -21,7 +21,7 @@ class SshSurfApi {
     constructor(options) {
         const { apiKey, figletDecoration } = options;
 
-        this.#figletDecoration = figletDecoration || true;
+        this.#figletDecoration = figletDecoration == undefined ? true : figletDecoration;
 
         if (this.#figletDecoration == true) {
             console.log(gradient.pastel.multiline(figlet.textSync('SSH.SURF', {
@@ -56,10 +56,13 @@ class SshSurfApi {
             console.error(chalk.redBright(e));
         });
 
-        const jsonResponse = await rawResponse.json();
+        let error;
+        const jsonResponse = await rawResponse.json().catch((e) => error = e);
 
-        if (jsonResponse.success == false) {
+        if (!jsonResponse || error) {
             spinner.error({ text: gradient.fruit('Error') });
+            console.error(chalk.redBright(error));
+            console.error(rawResponse);
         } else {
             spinner.success({ text: gradient.cristal('Success') });
         }
@@ -79,10 +82,13 @@ class SshSurfApi {
             console.error(chalk.redBright(e));
         });
 
-        const jsonResponse = await rawResponse.json();
+        let error;
+        const jsonResponse = await rawResponse.json().catch((e) => error = e);
 
-        if (jsonResponse.success == false) {
+        if (!jsonResponse || error) {
             spinner.error({ text: gradient.fruit('Error') });
+            console.error(chalk.redBright(error));
+            console.error(rawResponse);
         } else {
             spinner.success({ text: gradient.cristal('Success') });
         }

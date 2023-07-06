@@ -10,8 +10,8 @@
   },
   "scripts": {
     "test": "echo No Tests Yet...",
-    "start": "node index.js",
-    "cli": "node cli.js"
+    "start": "node .",
+    "cli": "node ./src/cli.js"
   },
   "repository": {
     "type": "git",
