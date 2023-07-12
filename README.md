@@ -155,7 +155,9 @@ console.log(response);
 
 <h2>✨ Examples</h2>
 
-Comming Soon..
+- [API Examples](https://github.com/itskdhere/ssh.surf-api-examples)
+
+More Comming Soon..
 
 <h2>📰 Others</h2>
 
