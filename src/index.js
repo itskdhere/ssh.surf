@@ -244,6 +244,25 @@ class SshSurfApi {
         return await this.#post("notify", JSON.stringify(payload));
     }
 
+
+    /**
+    * This API Method allows you to send notifications to your RevoltID as a DirectMessage.
+    * 
+    * Required Options:
+    * 
+    * @param message - The Message You Want To Send.
+    */
+
+    async notifyRevolt(options) {
+        const { message } = options;
+
+        const payload = {
+            "message": message
+        };
+
+        return await this.#post("notify-revolt", JSON.stringify(payload));
+    }
+
 }
 
 export default SshSurfApi;

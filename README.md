@@ -150,6 +150,15 @@ let response = await sshsurf.notify({
 console.log(response);
 ```
 
+- `notifyRevolt()` - This API Method allows you to send notifications to your RevoltID as a DirectMessage. Required Parameters:
+    - `message` - The Message You Want To Send.
+```js
+let response = await sshsurf.notifyRevolt({
+    message: 'ANY_MESSAGE_HERE'
+});
+console.log(response);
+```
+
 </details>
 
 
